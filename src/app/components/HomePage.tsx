@@ -103,7 +103,7 @@ export function HomePage() {
               <span>Commercial Vehicle Specialist</span>
             </div>
             
-            <h1 className="text-6xl md:text-9xl font-black text-primary leading-[0.9] mb-12 tracking-tighter uppercase">
+            <h1 className="text-6xl md:text-9xl font-black text-primary leading-none mb-12 tracking-tighter uppercase">
               Driven by <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-orange-400">Trust</span>.<br />
               Powered by <span className="underline decoration-accent/30 decoration-8 underline-offset-8 text-primary">Quality</span>.
             </h1>
@@ -172,13 +172,13 @@ export function HomePage() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div className="relative">
-              <div className="aspect-square bg-white rounded-[4rem] p-12 shadow-2xl relative overflow-hidden">
-                <div className="relative z-10 h-full flex flex-col justify-between">
+              <div className="aspect-auto lg:aspect-square bg-white rounded-[4rem] p-12 shadow-2xl relative overflow-hidden">
+                <div className="relative z-10 h-full flex flex-col justify-between min-h-[350px] lg:min-h-0">
                   <div className="size-24 rounded-3xl bg-accent flex items-center justify-center shadow-2xl shadow-accent/20">
                     <Award className="size-12 text-white" />
                   </div>
-                  <div>
-                    <h3 className="text-5xl font-black text-primary mb-6 uppercase leading-[0.9]">Truck Parts Specialist.</h3>
+                  <div className="mt-8">
+                    <h3 className="text-5xl font-black text-primary mb-6 uppercase leading-none">Truck Parts Specialist.</h3>
                     <p className="text-xl text-primary/60 font-medium leading-relaxed">
                       We focus on supplying high-performance commercial vehicle parts with transparency and dependable service.
                     </p>
@@ -190,7 +190,7 @@ export function HomePage() {
             
             <div className="space-y-12">
               <div>
-                <h2 className="text-5xl md:text-7xl font-black text-primary mb-8 uppercase leading-[0.8] tracking-tighter">
+                <h2 className="text-5xl md:text-7xl font-black text-primary mb-8 uppercase leading-none tracking-tighter">
                   Domestic <span className="text-accent">Reliability</span>.
                 </h2>
                 <p className="text-xl text-primary/60 font-medium leading-relaxed">
@@ -222,7 +222,7 @@ export function HomePage() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-24">
             <div className="max-w-3xl">
-              <h2 className="text-6xl md:text-8xl font-black text-primary mb-8 uppercase leading-[0.8] tracking-tighter">
+              <h2 className="text-6xl md:text-8xl font-black text-primary mb-8 uppercase leading-none tracking-tighter">
                 Our <span className="text-accent">Categories</span>.
               </h2>
               <p className="text-xl text-primary/60 font-medium leading-relaxed">
@@ -233,7 +233,7 @@ export function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {productCategories.map((cat, i) => (
-              <div key={i} className="group relative aspect-square rounded-[2.5rem] bg-secondary/30 p-10 overflow-hidden">
+              <div key={i} className="group relative aspect-auto sm:aspect-square rounded-[2.5rem] bg-secondary/30 p-10 overflow-hidden min-h-[250px] sm:min-h-0">
                 <div className={`absolute top-0 right-0 size-32 opacity-10 blur-2xl transition-all duration-500 group-hover:opacity-100 ${cat.accent}`} />
                 <div className="relative z-10 h-full flex flex-col justify-between">
                   <div className="size-16 rounded-2xl bg-white shadow-xl flex items-center justify-center">
@@ -255,7 +255,7 @@ export function HomePage() {
       {/* Offerings */}
       <section className="py-32 bg-primary text-white overflow-hidden relative">
         <div className="container mx-auto px-6 lg:px-8">
-          <h2 className="text-5xl md:text-7xl font-black mb-24 uppercase leading-[0.8] tracking-tighter text-center">
+          <h2 className="text-5xl md:text-7xl font-black mb-24 uppercase leading-none tracking-tighter text-center">
             Professional <span className="text-accent">Service</span>.
           </h2>
           
@@ -276,7 +276,7 @@ export function HomePage() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div>
-              <h2 className="text-6xl md:text-8xl font-black text-primary mb-12 uppercase leading-[0.8] tracking-tighter">
+              <h2 className="text-6xl md:text-8xl font-black text-primary mb-12 uppercase leading-none tracking-tighter">
                 Why <span className="text-accent">Us</span>?
               </h2>
               <div className="space-y-12">
@@ -347,7 +347,7 @@ export function HomePage() {
       <section className="py-24 bg-accent relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8 relative z-10 text-center lg:text-left">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-            <h2 className="text-5xl md:text-7xl font-black text-white uppercase leading-[0.8] tracking-tighter">
+            <h2 className="text-5xl md:text-7xl font-black text-white uppercase leading-none tracking-tighter">
               Ready to <span className="underline decoration-white/30 underline-offset-8">Order</span>?
             </h2>
             <div className="flex flex-wrap gap-6 justify-center">
@@ -372,7 +372,7 @@ export function HomePage() {
       <section id="contact" className="py-32 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-6xl md:text-8xl font-black text-primary mb-12 uppercase leading-[0.8] tracking-tighter text-center">
+            <h2 className="text-6xl md:text-8xl font-black text-primary mb-12 uppercase leading-none tracking-tighter text-center">
               Let's <span className="text-accent">Connect</span>.
             </h2>
             <p className="text-xl text-primary/60 font-medium leading-relaxed mb-20 text-center">
